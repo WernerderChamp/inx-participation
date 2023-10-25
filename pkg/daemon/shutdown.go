@@ -5,4 +5,5 @@ const (
 	PriorityCloseParticipationDatabase
 	PriorityStopParticipation
 	PriorityStopParticipationAPI
+	PriorityStopPrometheus
 )

@@ -42,5 +42,13 @@
   "profiling": {
     "enabled": false,
     "bindAddress": "localhost:6060"
+  },
+  "prometheus": {
+    "enabled": false,
+    "bindAddress": "localhost:9312",
+    "spammerMetrics": true,
+    "goMetrics": false,
+    "processMetrics": false,
+    "promhttpMetrics": false
   }
 }

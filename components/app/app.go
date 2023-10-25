@@ -6,6 +6,7 @@ import (
 	"github.com/iotaledger/hive.go/app/components/shutdown"
 	"github.com/iotaledger/inx-app/components/inx"
 	"github.com/iotaledger/inx-participation/components/participation"
+	"github.com/iotaledger/inx-participation/components/prometheus"
 )
 
 var (
@@ -13,7 +14,7 @@ var (
 	Name = "inx-participation"
 
 	// Version of the app.
-	Version = "1.0.0"
+	Version = "1.0.1-rc.1"
 )
 
 func App() *app.App {
@@ -24,6 +25,7 @@ func App() *app.App {
 			shutdown.Component,
 			participation.Component,
 			profiling.Component,
+			prometheus.Component,
 		),
 	)
 }

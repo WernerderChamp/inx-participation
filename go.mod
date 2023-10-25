@@ -8,15 +8,16 @@ require (
 	github.com/iotaledger/hive.go/lo v0.0.0-20230629181801-64c530ff9d15
 	github.com/iotaledger/hive.go/runtime v0.0.0-20230629181801-64c530ff9d15
 	github.com/iotaledger/hive.go/serializer/v2 v2.0.0-rc.1.0.20230629181801-64c530ff9d15
-	github.com/iotaledger/hornet/v2 v2.0.0-rc.8.0.20230830173644-b883585ad75c
+	github.com/iotaledger/hornet/v2 v2.0.1
 	github.com/iotaledger/inx-app v1.0.0-rc.3.0.20230417173151-cde47df5fe79
 	github.com/iotaledger/inx/go v1.0.0-rc.2
 	github.com/iotaledger/iota.go/v3 v3.0.0-rc.3
 	github.com/labstack/echo/v4 v4.11.1
 	github.com/pkg/errors v0.9.1
+	github.com/prometheus/client_golang v1.16.0
 	github.com/stretchr/testify v1.8.4
 	go.uber.org/dig v1.17.0
-	golang.org/x/crypto v0.12.0
+	golang.org/x/crypto v0.14.0
 )
 
 require (
@@ -56,12 +57,12 @@ require (
 	github.com/iancoleman/orderedmap v0.3.0 // indirect
 	github.com/iotaledger/go-ds-kvstore v1.0.0-rc.1.0.20230222082244-f3010dd0a934 // indirect
 	github.com/iotaledger/grocksdb v1.7.5-0.20230220105546-5162e18885c7 // indirect
-	github.com/iotaledger/hive.go/constraints v0.0.0-20230629181801-64c530ff9d15 // indirect
+	github.com/iotaledger/hive.go/constraints v0.0.0-20231019081410-32f61b05bebe // indirect
 	github.com/iotaledger/hive.go/crypto v0.0.0-20230629181801-64c530ff9d15 // indirect
 	github.com/iotaledger/hive.go/ds v0.0.0-20230629181801-64c530ff9d15 // indirect
 	github.com/iotaledger/hive.go/logger v0.0.0-20230629181801-64c530ff9d15 // indirect
 	github.com/iotaledger/hive.go/objectstorage v0.0.0-20230629181801-64c530ff9d15 // indirect
-	github.com/iotaledger/hive.go/stringify v0.0.0-20230629181801-64c530ff9d15 // indirect
+	github.com/iotaledger/hive.go/stringify v0.0.0-20231019081410-32f61b05bebe // indirect
 	github.com/iotaledger/iota.go v1.0.0 // indirect
 	github.com/ipfs/go-cid v0.4.1 // indirect
 	github.com/ipfs/go-datastore v0.6.0 // indirect
@@ -95,9 +96,8 @@ require (
 	github.com/onsi/gomega v1.27.10 // indirect
 	github.com/pasztorpisti/qs v0.0.0-20171216220353-8d6c33ee906c // indirect
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
-	github.com/petermattis/goid v0.0.0-20230808133559-b036b712a89b // indirect
+	github.com/petermattis/goid v0.0.0-20230904192822-1876fd5063bc // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
-	github.com/prometheus/client_golang v1.16.0 // indirect
 	github.com/prometheus/client_model v0.4.0 // indirect
 	github.com/prometheus/common v0.44.0 // indirect
 	github.com/prometheus/procfs v0.11.1 // indirect
@@ -112,12 +112,12 @@ require (
 	github.com/wollac/iota-crypto-demo v0.0.0-20221117162917-b10619eccb98 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
-	go.uber.org/zap v1.25.0 // indirect
-	golang.org/x/exp v0.0.0-20230817173708-d852ddb80c63 // indirect
-	golang.org/x/net v0.14.0 // indirect
+	go.uber.org/zap v1.26.0 // indirect
+	golang.org/x/exp v0.0.0-20230905200255-921286631fa9 // indirect
+	golang.org/x/net v0.17.0 // indirect
 	golang.org/x/sync v0.3.0 // indirect
-	golang.org/x/sys v0.11.0 // indirect
-	golang.org/x/text v0.12.0 // indirect
+	golang.org/x/sys v0.13.0 // indirect
+	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20230822172742-b8732ec3820d // indirect
