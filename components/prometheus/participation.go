@@ -81,14 +81,11 @@ func configureParticipationMetrics(registry *prometheus.Registry) {
 	registry.MustRegister(stakingAccumulated)
 }
 
-func collectParticipationMetrics() {
-	fmt.Print("Requested Metrics\n")
+func collectParticipationMetrics() error {
 	metrics, err := deps.ParticipationManager.ProvidePrometheusMetrics()
 	if err != nil {
-		fmt.Printf("Failed to fetch metrics for prometheus: %e", err)
-		return
+		return err
 	}
-	fmt.Printf("Metrics: %+v\n", metrics)
 	participationEvents.WithLabelValues("upcomming").Set(metrics.ParticipationEvents.EventStatusUpcomming)
 	participationEvents.WithLabelValues("commencing").Set(metrics.ParticipationEvents.EventStatusCommencing)
 	participationEvents.WithLabelValues("holding").Set(metrics.ParticipationEvents.EventStatusHolding)
@@ -111,4 +108,5 @@ func collectParticipationMetrics() {
 			}
 		}
 	}
+	return nil
 }

@@ -63,7 +63,9 @@ func configure() error {
 
 	deps.PrometheusEcho.GET("/metrics", func(c echo.Context) error {
 		if ParamsPrometheus.ParticipationMetrics {
-			collectParticipationMetrics()
+			if err := collectParticipationMetrics(); err != nil {
+				Component.LogError(err)
+			}
 		}
 
 		handler := promhttp.HandlerFor(

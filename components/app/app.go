@@ -14,7 +14,7 @@ var (
 	Name = "inx-participation"
 
 	// Version of the app.
-	Version = "1.0.1-rc.1"
+	Version = "1.1.0-rc.1"
 )
 
 func App() *app.App {
